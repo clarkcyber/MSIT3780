@@ -1,0 +1,1 @@
+mono /opt/NetworkMiner*/NetworkMiner.exe --noupdatecheck
