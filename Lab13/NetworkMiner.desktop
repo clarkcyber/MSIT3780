@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=NetworkMiner
+Comment=NetworkMiner is an open source network forensics tool
+Exec=mono /opt/NetworkMiner*/NetworkMiner.exe --noupdatecheck
+Path=/opt/NetworkMiner*/
+Icon=/usr/share/icons/ePapirus/32x32/apps/net.bartkessels.getit.svg
+Terminal=false
+Type=Application
+Categories=Utility;Development;
