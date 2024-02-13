@@ -1,2 +1,2 @@
 git pull https://github.com/clarkcyber/MSIT3780.git
-chmod -R +x ./*.sh
+find ./ -type f -iname "*.sh" -exec chmod +x {} \;
