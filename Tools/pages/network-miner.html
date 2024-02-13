@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <base target="_blank">
+    <link rel="stylesheet" href="../w3.css">
+    <style>
+        .button {
+            width: 200px;
+        }
+
+        .button-container {
+            width: 250px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .full {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-indigo" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Close &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="pages/ole-tools.html" class="w3-bar-item w3-button">Oletools</a>
+        <a href="pages/network-miner.html" class="w3-bar-item w3-button">NetworkMiner</a>
+      </div>
+    <div id="main">
+    <div class="w3-container w3-indigo">
+        <button style="display: inline-block; vertical-align: middle;margin-bottom:15px" id="openNav" class="w3-button w3-indigo w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <h1 style="display: inline-block">MSIT-3780 Resources</h1>
+    </div>
+    <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+        <p>As a reminder only triage files using the attack box.</p>
+    </div>
+    <div class="" style="width:50%;margin:auto;">
+        <h2>NetworkMiner</h2>
+        NetworkMiner is an open source network forensics tool that extracts artifacts, such as files, images, emails and passwords, from captured network traffic in PCAP files. NetworkMiner can also be used to capture live network traffic by sniffing a network interface. Detailed information about each IP address in the analyzed network traffic is aggregated to a network host inventory, which can be used for passive asset discovery as well as to get an overview of which devices that are communicating. NetworkMiner is primarily designed to run in Windows, but can also be used in Linux.
+        <br><br>
+NetworkMiner has, since the first release in 2007, become a popular tool among incident response teams as well as law enforcement. NetworkMiner is today used by companies and organizations all over the world.
+<br><br>
+Check out the <a href="https://www.netresec.com/?page=NetworkMiner">NetworkMiner</a> page for more information.    
+</div>
+    
+
+
+
+
+    </div>
+    <div class="w3-container w3-indigo">
+        <h5>(c) 2024 Clark University</h5>
+    </div>
+</div>
+    <script>
+        function w3_open() {
+          document.getElementById("main").style.marginLeft = "25%";
+          document.getElementById("mySidebar").style.width = "25%";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+          document.getElementById("main").style.marginLeft = "0%";
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+        }
+        </script>
+</body>
+
+</html>
